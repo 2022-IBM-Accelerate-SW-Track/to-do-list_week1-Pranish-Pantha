@@ -18,7 +18,7 @@ const Todos = ({ todos }) => {
               {/* Remember, we set the local state of this todo item when the user submits the form in 
               AddTodo.js. All we need to do is return the todo list item */}
               <CardContent>
-                <ListItemButton style={{padding: "50px"}}>
+                <ListItemButton style={{padding: "10px"}}>
                 <ListItemText primary={todo.content} />
                   <Checkbox />
                 </ListItemButton>
