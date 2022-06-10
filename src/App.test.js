@@ -23,6 +23,7 @@ test('test that App component renders', () => {
 test('test that new-item-button is a button', () => {
   render(<App/>, container);
   const element = screen.getByTestId('new-item-button');
+  console.log(element.innerHTML)
   expect(element.innerHTML.toLowerCase().includes("button")).toBe(true)
 });
 

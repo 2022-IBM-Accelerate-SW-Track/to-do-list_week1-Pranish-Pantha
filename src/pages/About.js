@@ -1,10 +1,31 @@
 import React, { Component } from 'react';
-  
+import "./About.css";
+import profile_pic_name from "../assets/pranish.png";
+
 export default class About extends Component {
   render() {
     return (
       <div>
-        <p>Design your About me page </p> 
+         <div>
+    <div class="split left">
+      <div className="centered">
+        <img 
+          className="profile_image"
+          // Image goes here
+          alt="Profile Pic"
+          src={profile_pic_name}
+          ></img>
+      </div>
+    </div>
+    <div className="split right">
+      <div className="centered">
+        <div className="name_title">Pranish Pantha</div>
+        <div className="brief_description">
+          Student at UNC Chapel Hill Studying Computer Science and Business
+        </div>
+      </div>
+    </div>
+  </div>
       </div>
     )
   }
